@@ -1,0 +1,15 @@
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+Are you sure want to delete?
+
+<form method="post">
+      {% csrf_token %}
+
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'show_contact' %}" class="btn btn-info">Back</a>
+  </form>
+
+
